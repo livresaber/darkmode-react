@@ -1,6 +1,6 @@
 {
   "name": "darkmode-react",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "lucasferreiralimax (https://github.com/lucasferreiralimax)",
   "bugs": {
     "url": "https://github.com/livresaber/darkmode-react/issues"
@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "e2e": "start-server-and-test 'react-scripts start' :3000 'cypress open --e2e'"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "cypress": "^10.11.0",
+    "start-server-and-test": "^1.14.0"
   }
 }
