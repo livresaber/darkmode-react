@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# darkmode-react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create a component darkmode in React 18
 
 ## Available Scripts
 
