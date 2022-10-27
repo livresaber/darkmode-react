@@ -7,7 +7,7 @@ function App() {
   return (
     <div className='app'>
       <header className='app-header'>
-        <img src={logo} className='app-logo' alt='logo' />
+        <img src={logo} className='app-logo' alt='logo React' />
       </header>
       <main>
         <DarkMode />
