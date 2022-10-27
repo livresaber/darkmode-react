@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
+import pkg from '../package.json';
+
 import DarkMode from './components/DarkMode';
 
 function App() {
+  const appVersion = pkg.version;
+
   return (
     <div className='app'>
       <header className='app-header'>
@@ -12,6 +16,7 @@ function App() {
       <main>
         <DarkMode />
       </main>
+      <footer>Version {appVersion} @LivreSaber</footer>
     </div>
   );
 }
