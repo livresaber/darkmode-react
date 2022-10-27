@@ -10,6 +10,7 @@ test('renders dark mode', () => {
 
   const darkmode = screen.getByText(/DarkMode/i);
   expect(darkmode).toBeInTheDocument();
+  expect(JSON.parse(localStorage.getItem('darkmode'))).toBeTruthy();
   expect(document.body.classList.contains('darkmode')).toBeTruthy();
 });
 
@@ -19,5 +20,6 @@ test('renders light mode', () => {
 
   const lightmode = screen.getByText(/LightMode/i);
   expect(lightmode).toBeInTheDocument();
+  expect(JSON.parse(localStorage.getItem('darkmode'))).toBeFalsy();
   expect(document.body.classList.contains('lightmode')).toBeTruthy();
 });
