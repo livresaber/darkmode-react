@@ -17,7 +17,7 @@ function App() {
         <DarkMode />
       </main>
       <footer>
-        <a href='https://github.com/livresaber/darkmode-react' target='_blank'>Version {appVersion} @LivreSaber</a>
+        <a href='https://github.com/livresaber/darkmode-react' target='_blank' rel='noreferrer'>Version {appVersion} @LivreSaber</a>
       </footer>
     </div>
   );
