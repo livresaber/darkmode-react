@@ -12,33 +12,20 @@ function DarkMode() {
     darkmode == null ? true : JSON.parse(darkmode)
   );
 
-  const setStyleVariables = (objectVariables) => {
-    for(let { name, value } of objectVariables) {
-      document.documentElement.style.setProperty(name, value)
-    }
-  }
-
   useEffect(() => {
-    localStorage.setItem('darkmode', JSON.stringify(mode));
-    if (mode) {
-      document.body.classList.remove('lightmode')
+    localStorage.setItem('darkmode', JSON.stringify(mode))
+
+    if(mode) {
       document.body.classList.add('darkmode')
-      setStyleVariables([
-        { name: '--color-text',       value: '#ffffff' },
-        { name: '--color-background', value: '#222222' },
-      ])
+      document.body.classList.remove('lightmode')
     } else {
-      document.body.classList.remove('darkmode')
       document.body.classList.add('lightmode')
-      setStyleVariables([
-        { name: '--color-text',       value: '#222222' },
-        { name: '--color-background', value: '#ffffff' },
-      ])
+      document.body.classList.remove('darkmode')
     }
   }, [mode])
 
   return (
-    <button className="btn-mode" type="button" onClick={() => setMode(!mode)}>
+    <button className='btn-mode' type='button' onClick={() => setMode(!mode)}>
       {mode ? <Moon /> : <Sun />}
       {mode ? 'DarkMode' : 'LightMode' }
     </button>
