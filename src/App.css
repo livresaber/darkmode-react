@@ -16,8 +16,9 @@
   pointer-events: none;
 }
 
-.app-link {
-  color: #61dafb;
+a {
+  color: var(--color-text);
+  text-decoration: nome;
 }
 
 main {
