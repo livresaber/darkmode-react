@@ -1,49 +1,61 @@
 {
-  "name": "darkmode-react",
-  "version": "0.1.2",
+  "name": "darkmode-react-component",
+  "private": false,
+  "version": "0.1.6",
   "author": "lucasferreiralimax (https://github.com/lucasferreiralimax)",
   "bugs": {
     "url": "https://github.com/livresaber/darkmode-react/issues"
   },
   "repository": "https://github.com/livresaber/darkmode-react",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^6.4.6",
-    "@testing-library/react": "^16.0.0",
-    "@testing-library/user-event": "^14.5.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^4.2.0"
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/darkmode-react-component.umd.cjs",
+  "module": "./dist/darkmode-react-component.js",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/darkmode-react-component.js",
+      "require": "./dist/darkmode-react-component.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "e2e": "start-server-and-test 'react-scripts start' :3000 'cypress open --e2e'"
+    "dev": "vite",
+    "test": "vitest",
+    "build": "tsc -b && vite build",
+    "build:module": "tsc && vite build --config vite-module.config.js",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "e2e": "start-server-and-test 'npm run dev' :3000 'cypress open --e2e'"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "darkmode-react-component": "^0.1.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.2.0",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "@vitejs/plugin-react": "^4.3.1",
     "cypress": "^13.12.0",
-    "start-server-and-test": "^2.0.4"
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "jsdom": "^24.1.0",
+    "start-server-and-test": "^2.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vite-plugin-style-inject": "^0.0.1",
+    "vite-plugin-svgr": "^4.2.0",
+    "vitest": "^1.6.0"
   }
 }
