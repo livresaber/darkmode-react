@@ -6,8 +6,6 @@
 }
 
 body {
-  --color-primary: #61dafb;
-  --color-secondary: #34495e;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -15,13 +13,13 @@ body {
 }
 
 body.lightmode {
-  --color-text: #222;
-  --color-background: #fff;
+  --dm-color-text: #222;
+  --dm-color-background: #fff;
 }
 
 body.darkmode {
-  --color-text: #fff;
-  --color-background: #222;
+  --dm-color-text: #fff;
+  --dm-color-background: #222;
 }
 
 code {
