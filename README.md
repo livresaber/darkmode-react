@@ -1,75 +1,59 @@
 # darkmode-react
 
-Create a component darkmode in React 18
+A component darkmode injection in your document page with React
 
-## Available Scripts
+<a href="https://darkmode-react.web.app" target="_blank">Live Preview</a>
 
-In the project directory, you can run:
+Install
 
-### `npm start`
+```bash
+npm install --save darkmode-react-component
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Usage basic
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```tsx
+import DarkModeReact from 'darkmode-react-component';
 
-### `npm test`
+<DarkModeReact />
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Prop hiddenLabel
+```tsx
+<DarkModeVue hiddenLabel />
+```
 
-### `npm run build`
+Prop hiddenIcon
+```tsx
+<DarkModeVue hiddenIcon />
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Prop labelDark and labelLight
+```tsx
+<DarkModeVue labelDark="Tema escuro" labelLight="Tema claro" />
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Style modification and usage in your styles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/
-deployment) for more information.
+```css
+body {
+  --dm-color-primary: #41b883;
+  --dm-color-secondary: #34495e;
+  --dm-color-text: #222;
+  --dm-color-background: #fff;
+}
 
-### `npm run e2e`
+body.darkmode {
+  --dm-color-text: #fff;
+  --dm-color-background: #222;
+}
+```
 
-Launches the test e2e runner in the interactive watch mode with cypress.
+Create your variable colors and update this with class .darkmode.
 
-### `npm run eject`
+### Description class of components
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If DarkModeReact usage in a page, a class in body document is update with class darkmode.
+In LocalStorage is created a key store with value current mode.
+Do you usage children body.darkmode styles for your application.
+I recomend create a variables colors in css and update this with toggle class of body document.
