@@ -53,7 +53,7 @@
     "jsdom": "^25.0.1",
     "start-server-and-test": "^2.0.8",
     "typescript": "^5.6.2",
-    "vite": "^5.4.7",
+    "vite": "^5.4.8",
     "vite-plugin-style-inject": "^0.0.1",
     "vite-plugin-svgr": "^4.2.0",
     "vitest": "^2.1.1"
