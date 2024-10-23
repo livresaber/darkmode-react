@@ -5,6 +5,6 @@ import App from './App';
 beforeEach(() => render(<App />));
 
 test('renders btn mode', () => {
-  const btn = screen.getByTestId('btn-mode');
+  const btn = screen.getByTestId('btn-darkmode');
   expect(btn).toBeInTheDocument();
 });
