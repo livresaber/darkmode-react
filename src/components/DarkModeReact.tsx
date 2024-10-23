@@ -11,6 +11,7 @@ type Props = {
   hiddenIcon?: boolean;
   labelDark?: string;
   labelLight?: string;
+  "data-testid"?: string;
 };
 
 function DarkMode(props: Props) {
@@ -36,7 +37,7 @@ function DarkMode(props: Props) {
 
   return (
     <button
-      data-testid={btnName}
+    data-testid={props["data-testid"] || btnName}
       className={`${btnName} ${props.hiddenLabel && "hiddenLabel"}`}
       type="button"
       onClick={() => setMode(!mode)}

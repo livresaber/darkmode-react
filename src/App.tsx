@@ -7,7 +7,7 @@ function App() {
   return (
     <NucleusReact config={configApp}>
       <div className='content example'>
-        <DarkModeReact />
+        <DarkModeReact data-testid="btn-darkmode" />
       </div>
     </NucleusReact>
   )
