@@ -1,11 +1,7 @@
-
-
-
-
 # 🌗 **DarkMode-React**
 
-**Effortlessly toggle between light and dark modes in your React projects!**  
-A simple yet powerful component for bringing dark mode to your users.  
+**Effortlessly toggle between light and dark modes in your React projects!**
+A simple yet powerful component for bringing dark mode to your users.
 Give your application the look it deserves, day or night! 🌞🌚
 
 🔗 **[🚀 Live Preview](https://darkmode-react.web.app)**
@@ -22,7 +18,7 @@ Give your application the look it deserves, day or night! 🌞🌚
 - [🚀 Join the Dark Side... Or Not!](#-join-the-dark-side-or-not)
 ---
 
-## ⚙️ **Installation Guide**  
+## ⚙️ **Installation Guide**
 
 Get started in seconds with npm! 🎯
 
@@ -32,7 +28,7 @@ npm install --save darkmode-react-component
 
 ---
 
-## 💡 **Basic Usage**  
+## 💡 **Basic Usage**
 
 Add **DarkModeReact** to your project with just a few lines:
 
@@ -46,25 +42,25 @@ And that’s it! Your users can now switch between themes seamlessly! ⚡
 
 ---
 
-## ⚙️ **Props & Customization**  
+## ⚙️ **Props & Customization**
 
 Fine-tune the behavior of your dark mode switch with these props:
 
-### 🔒 `hiddenLabel`  
+### 🔒 `hiddenLabel`
 Hide the default label for a cleaner look:
 
 ```tsx
 <DarkModeReact hiddenLabel />
 ```
 
-### 👁️ `hiddenIcon`  
+### 👁️ `hiddenIcon`
 Prefer no icons? This one’s for you:
 
 ```tsx
 <DarkModeReact hiddenIcon />
 ```
 
-### 🌚 `labelDark` & 🌞 `labelLight`  
+### 🌚 `labelDark` & 🌞 `labelLight`
 Customize the labels for a personal touch:
 
 ```tsx
@@ -73,7 +69,7 @@ Customize the labels for a personal touch:
 
 ---
 
-## 🎨 **Style Customization**  
+## 🎨 **Style Customization**
 
 Match the theme switch to your brand’s identity! Here’s how you can modify the colors:
 
@@ -95,7 +91,7 @@ body.darkmode {
 
 ---
 
-## 📚 **Component Details**  
+## 📚 **Component Details**
 
 When you use **DarkModeReact**, the following happens:
 
@@ -114,14 +110,14 @@ When you use **DarkModeReact**, the following happens:
 
 ## ⭐ **Show Some Love!**
 
-Found this component useful? **Star** ⭐ the repository, share it with fellow developers, and contribute your ideas!  
+Found this component useful? **Star** ⭐ the repository, share it with fellow developers, and contribute your ideas!
 Let's build a stylish and accessible web, together! 💖
 
 Got any suggestions or issues? Head over to the **Issues** section or open a **Pull Request**. Contributions are always welcome! 🙌
 
 ---
 
-## 🚀 **Join the Dark Side... Or Not!** 
+## 🚀 **Join the Dark Side... Or Not!**
 
 DarkMode-React makes it easy to let users decide their preferred experience. With smooth transitions, customizable styles, and a straightforward setup, it’s the perfect addition to any modern React app.
 
