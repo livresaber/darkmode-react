@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "darkmode-react-component": "^0.1.8",
-    "nucleus-react-js": "^0.0.8",
+    "nucleus-react-js": "^0.0.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
