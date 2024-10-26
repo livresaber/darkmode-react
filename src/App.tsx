@@ -1,16 +1,16 @@
-import NucleusReact from 'nucleus-react-js';
-import { configApp } from './App.config';
-import DarkModeReact from './components/DarkModeReact';
-import './App.css'
+import NucleusReact, { NucleusBox } from "nucleus-react-js";
+import { configApp } from "./App.config";
+import DarkModeReact from "./components/DarkModeReact";
+import "./App.css";
 
 function App() {
   return (
     <NucleusReact config={configApp}>
-      <div className='content example'>
+      <NucleusBox className="example">
         <DarkModeReact data-testid="btn-darkmode" />
-      </div>
+      </NucleusBox>
     </NucleusReact>
-  )
+  );
 }
 
-export default App
+export default App;
